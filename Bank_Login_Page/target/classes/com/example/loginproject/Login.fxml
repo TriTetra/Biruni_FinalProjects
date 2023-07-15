@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginproject.LoginControl">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="500.0" fitWidth="298.0">
+               <image>
+                  <Image url="@../../../Images/PiggyBankPower.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="LGMessage" layoutX="131.0" layoutY="320.0" style="-fx-font-weight: bold;" textFill="RED" />
+            <PasswordField fx:id="passwordField" layoutX="171.0" layoutY="258.0" prefHeight="30.0" prefWidth="150.0" />
+            <ImageView fx:id="timeImageView" fitHeight="70.0" fitWidth="70.0" layoutX="211.0" layoutY="61.0">
+               <image>
+                  <Image url="@../../../Images/number.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="183.0" text="Username" />
+            <Label layoutX="55.0" layoutY="264.0" text="Password" />
+            <Button fx:id="LG" layoutX="116.0" layoutY="351.0" mnemonicParsing="false" onAction="#LGMessageOnAction" prefHeight="29.0" prefWidth="260.0" style="-fx-background-color: #eb76b8;" text="Login" />
+            <TextField fx:id="usernameTextField" layoutX="171.0" layoutY="177.0" prefHeight="30.0" prefWidth="150.0" />
+            <Button fx:id="registerGoButton" layoutX="116.0" layoutY="392.0" mnemonicParsing="false" onAction="#setRegisterGoButtonOnAction" prefHeight="29.0" prefWidth="260.0" style="-fx-background-color: #eb76b8;" text="Register" />
+            <Button fx:id="closeMainWindow" layoutX="116.0" layoutY="436.0" mnemonicParsing="false" onAction="#CloseWindowOnAction" prefHeight="29.0" prefWidth="260.0" style="-fx-background-color: #eb76b8;" text="Close Window" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
